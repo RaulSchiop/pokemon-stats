@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto',sans-serif;   
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    overflow-x: hidden;
+    align-items: center;
+    flex-direction: column;
+}
+  
+.container{
+position: relative;
+display: grid;
+grid-template-columns: 1fr 1fr ;
+grid-template-rows: 1fr ;
+justify-content: center;
+    background-color: rgb(122, 40, 185);
+    height:600px;
+    width: 90%;
+    border-radius: 20px;
+    box-shadow: 10px 10px 40px rgb(122, 40, 185);
+    
+    
+}
+#pokemonName{
+
+    border-radius: 5px;
+    width: 100%;
+    outline: none;
+    background-color:rgb(255, 255, 255) ;
+    border: none;
+    color: rgb(122, 40, 185);
+    height: 30px;
+padding: 20px;
+margin-bottom: 15px;
+}
+
+.btn{
+    
+  
+height: 30px;
+width: 100px;
+border-radius: 20px;
+background-color: white;
+border: none;
+
+    
+}
+.info{
+    display: flex;
+   
+    justify-content: center;
+    height: 500px;
+    align-self: center;
+    justify-self: center;
+    flex-direction: column;
+   
+}
+h3{
+    color:white;
+}
+.pokeImg{
+   
+    grid-column-start: 2;
+    grid-column-end: 3;
+    
+    height: 300px;
+    width: 100%;
+   
+   border-radius: 20px;
+   object-fit: cover;
+   opacity: 0;
+   transition: opacity 1.5s ease;
+}
+
+.line{
+    background-color: white;
+    height: 10px;
+    width: 100%;
+    border-radius: 20px;
+    
+}
+
+#hpL{
+   width: 100%;
+
+}
+#defL{
+    width: 100%;
+}
+#poL{
+    width: 100%;
+}
+
+
+.stats-c{
+    
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+  justify-content: center;
+justify-self: center;
+flex-wrap: wrap;
+
+}
+.btn{
+    transition: all 0.3s ease; 
+}
+  .btn:active{
+
+    transform: scale(98%);
+  }
+  .stats-continer{
+    display: none;
+  }
+ h3{
+    font-size: 15px;
+ }
+ #hpL, #defL, #poL {
+    transition: width 0.5s ease; 
+}
